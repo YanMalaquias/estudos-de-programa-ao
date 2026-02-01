@@ -1,0 +1,244 @@
+/*
+    ================================
+    IMOBILIÁRIA SANTOS - Folha de Estilos CSS
+    ================================
+    Estilos de cores, fontes e layout
+    Tema: Azul corporativo (#0066cc)
+    ================================
+*/
+
+/* ================================
+   SEÇÃO 1: RESET E ESTILOS GLOBAIS
+   Remove margens padrão e define fonte geral
+   ================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Estilo de todos os links - cor vermelha */
+a {
+    color: red;
+}
+
+/* ================================
+   SEÇÃO 2: CABEÇALHO (secao-topo)
+   Fundo azul, texto branco, centralizado
+   ================================ */
+.secao-topo {
+    background-color: #0066cc;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.secao-topo h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.secao-topo p {
+    font-size: 1.1em;
+}
+
+/* ================================
+   SEÇÃO 3: BANNER PRINCIPAL (secao-banner)
+   Imagem responsiva, largura 100%
+   ================================ */
+.secao-banner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.secao-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ================================
+   SEÇÃO 4: SOBRE A IMOBILIÁRIA (sobre)
+   Fundo claro, texto centralizado
+   ================================ */
+.sobre {
+    padding: 50px 30px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.sobre h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #0066cc;
+}
+
+.sobre p {
+    font-size: 1em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ================================
+   SEÇÃO 5: SERVIÇOS (servicos)
+   Lista de serviços com destaque
+   ================================ */
+.servicos {
+    padding: 50px 30px;
+    background-color: white;
+}
+
+.servicos h3 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #0066cc;
+    text-align: center;
+}
+
+.servicos ul {
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.servicos li {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #e6f0ff;
+    border-left: 4px solid #0066cc;
+    font-size: 1em;
+}
+
+/* ================================
+   SEÇÃO 6: CORRETORES (corretores)
+   Cards com informações dos profissionais
+   ================================ */
+.corretores {
+    padding: 50px 30px;
+    background-color: #f9f9f9;
+}
+
+.corretores h3 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #0066cc;
+    text-align: center;
+}
+
+/* Container com layout flexível para cards */
+.lista-corretores {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo individual de cada card de corretor */
+.corretor {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.corretor img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.corretor h4 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #0066cc;
+}
+
+.corretor p {
+    color: #666;
+}
+
+/* ================================
+   SEÇÃO 7: CONTATO E MAPA (contato)
+   Informações de contato e mapa Google Maps
+   ================================ */
+.contato {
+    padding: 50px 30px;
+    background-color: white;
+    text-align: center;
+}
+
+.contato h3 {
+    font-size: 1.8em;
+    margin: 20px 0;
+    color: #0066cc;
+}
+
+.contato p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/* Iframe do mapa com espaçamento */
+.contato iframe {
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+/* ================================
+   SEÇÃO 8: RODAPÉ (footer)
+   Fundo azul, texto branco, centralizado
+   ================================ */
+footer {
+    background-color: #0066cc;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 20px;
+    text-align: center;
+}
+
+/* ================================
+   SEÇÃO 9: MEDIA QUERIES (RESPONSIVIDADE)
+   Adaptação para telas menores (mobile)
+   ================================ */
+@media (max-width: 768px) {
+    /* Em telas pequenas, cards ficam em coluna */
+    .lista-corretores {
+        flex-direction: column;
+    }
+
+    .corretor {
+        min-width: 100%;
+    }
+
+    /* Títulos menores em mobile */
+    .secao-topo h1 {
+        font-size: 1.8em;
+    }
+
+    .sobre h2,
+    .servicos h3,
+    .corretores h3 {
+        font-size: 1.5em;
+    }
+}
+
+/* FIM DA FOLHA DE ESTILOS */
