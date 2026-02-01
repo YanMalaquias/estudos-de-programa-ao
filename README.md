@@ -28,7 +28,15 @@ imobiliaria-santos/
 
 ## 🎯 Seções da Página
 
-A página está organizada em **6 seções principais**:
+### 0️⃣ **Barra de Navegação** (`.navbar`)
+- **Design minimalista e discreto**
+- Logo simplificado: "Santos"
+- Menu com 5 itens essenciais
+- **Efeito Ghost Navbar**: Azul ao rolar a página
+- Menu hambúrguer funcional para mobile
+- Fontes finas e elegantes (font-weight: 300)
+- Espaçamento azul generoso
+- Microinterações suaves (hover com linha)
 
 ### 1️⃣ **Cabeçalho** (`.secao-topo`)
 - Logo/Título: "Imobiliária Santos"
@@ -36,7 +44,9 @@ A página está organizada em **6 seções principais**:
 - Fundo azul corporativo
 
 ### 2️⃣ **Banner Principal** (`.secao-banner`)
-- Imagem de destaque da imobiliária
+- Imagem de destaque profissional
+- Gradiente azul com barras amarelas decorativas
+- Textos de apresentação e CTA
 - Responsivo (adapta-se a qualquer tamanho)
 
 ### 3️⃣ **Sobre Nós** (`.sobre`)
@@ -64,21 +74,70 @@ A página está organizada em **6 seções principais**:
 
 ## 🎨 Personalizações Realizadas
 
+### ✏️ Alterações em HTML
+- **Navbar minimalista**: Logo simplificado ("Santos"), 5 itens de menu
+- **IDs em seções**: Para navegação suave (#inicio, #sobre, #servicos, #corretores, #contato)
+- **Menu hambúrguer**: Integrado e funcional
+
 ### ✏️ Alterações em CSS
-- **Links**: Cor vermelha (`color: red`)
+- **Navbar discreto**: Fundo azul generoso (#0066cc) com espaçamento elegante
+- **Efeito Ghost Navbar**: Muda de cor ao rolar a página (classe `.scrolled`)
+- **Tipografia fina**: Font-weight 300 para elegância minimalista
+- **Cores corporativas**: Azul (#0066cc) + branco + amarelo (#feca57) no hover
+- **Microinterações**: Linhas finas abaixo dos links ao passar o mouse
+- **Links**: Cor vermelha para destaque
 - **Footer**: Centralizado com flexbox
 - **Seção Contato**: Texto centralizado
+- **Imagens**: Banner profissional com gradiente
+
+### ✏️ Alterações em JavaScript
+- **Menu hambúrguer funcional**: Toggle ao clicar
+- **Efeito scroll detector**: Detecta quando rolar e ativa `.scrolled`
+- **Fechamento automático**: Menu fecha ao clicar em um link
+- **Scroll suave**: Navegação entre seções com transição fluida
 
 ### 📝 Comentários Adicionados
 - Comentários em **HTML**: Identificação de cada seção
-- Comentários em **CSS**: 9 seções bem organizadas
+- Comentários em **CSS**: 11 seções bem organizadas incluindo navbar
 - Comentários em **JavaScript**: 7 seções com funções documentadas
 
 ---
 
-## 🚀 Como Usar
+## � Funcionalidades da Navbar
 
-### Abrir a Página
+### 🎯 Navbar Minimalista
+- **Posição fixa**: Permanece no topo ao rolar
+- **Background azul generoso**: #0066cc com transições suaves
+- **Efeito Ghost**: Muda de cor ao rolar (classe `.scrolled`)
+- **Tipografia elegante**: Maiúsculas, espaçamento, peso 300
+- **Menu hambúrguer**: Funcional em mobile
+
+### 🔄 Interações
+- **Hover nos links**: Linha fina branca/amarela surge embaixo
+- **Menu hambúrguer**: Se transforma em X ao abrir
+- **Scroll suave**: Navegação entre seções com efeito smooth
+- **Responsivo**: Adapta-se perfeitamente a mobile
+
+### 📱 Mobile
+- Menu hambúrguer discreto (3 linhas)
+- Menu lateral escuro ao abrir
+- Layout vertical de itens
+- Touch-friendly
+
+---
+
+## 💡 Princípios de Menu Discreto Aplicados
+
+1. **Poucos Itens**: Apenas 5 opções essenciais (Início, Sobre, Serviços, Equipe, Contato)
+2. **Tipografia Fina**: Font-weight 300 para elegância minimalista
+3. **Microinterações**: Efeitos hover sutis sem exagero visual
+4. **Espaço Azul Generoso**: Amplo uso de espaçamento com tema corporativo
+5. **Sem Distrações**: Sem botões CTA destacados, foco no conteúdo
+6. **Ghost Effect**: Navbar muda ao interagir, não distrai inicialmente
+
+---
+
+## 🚀 Como Usar
 
 1. Navegue até a pasta `imobiliaria-santos/`
 2. Abra o arquivo `index.html` em um navegador web (clique duplo ou arraste para o navegador)
@@ -255,3 +314,4 @@ Este é um projeto educacional. Sinta-se livre para usar, modificar e distribuir
 ---
 
 **Desenvolvido com ❤️ usando a filosofia "Vibe Coding"**
+
