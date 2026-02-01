@@ -20,10 +20,40 @@
 </head>
 <body>
     <!-- ================================
+         BARRA DE NAVEGAÇÃO (navbar)
+         Menu hambúrguer minimalista e discreto
+         ================================ -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <!-- Logo/Marca minimalista -->
+            <div class="navbar-logo">
+                <span>Santos</span>
+            </div>
+            
+            <!-- Menu hambúrguer (mobile e desktop) -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- Menu de navegação discreto -->
+            <ul class="nav-menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#corretores">Equipe</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+</head>
+<body>
+    <!-- ================================
          SEÇÃO 1: CABEÇALHO (secao-topo)
          Contém: Logo/Título e slogan
          ================================ -->
-    <div class="secao-topo">
+    <div class="secao-topo" id="inicio">
         <h1>Imobiliária Santos</h1>
         <p>Sua confiança é nosso compromisso</p>
     </div>
@@ -40,7 +70,7 @@
          SEÇÃO 3: SOBRE A IMOBILIÁRIA (sobre)
          Contém: Apresentação da empresa
          ================================ -->
-    <div class="sobre">
+    <div class="sobre" id="sobre">
         <h2>Sobre Nós</h2>
         <p>A Imobiliária Santos é uma empresa com anos de experiência no mercado imobiliário, dedicada a oferecer os melhores serviços aos nossos clientes.</p>
     </div>
@@ -49,7 +79,7 @@
          SEÇÃO 4: SERVIÇOS (servicos)
          Contém: Lista de serviços oferecidos
          ================================ -->
-    <div class="servicos">
+    <div class="servicos" id="servicos">
         <h3>Serviços</h3>
         <!-- Lista desordenada com serviços -->
         <ul>
@@ -64,7 +94,7 @@
          SEÇÃO 5: EQUIPE DE CORRETORES (corretores)
          Contém: Cards com informações dos corretores
          ================================ -->
-    <div class="corretores">
+    <div class="corretores" id="corretores">
         <h3>Corretores</h3>
         <!-- Container com todos os cards de corretores -->
         <div class="lista-corretores">
@@ -93,7 +123,7 @@
          SEÇÃO 6: CONTATO E MAPA (contato)
          Contém: Informações de contato e mapa Google Maps
          ================================ -->
-    <div class="contato">
+    <div class="contato" id="contato">
         <!-- Informações de contato -->
         <h3>Contato</h3>
         <p>Telefone: (11) 3000-0000</p>

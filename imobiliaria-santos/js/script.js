@@ -16,13 +16,53 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Página Imobiliária Santos carregada com sucesso!');
     
     // Inicializa funcionalidades
+    initializeNavbar();
     initializeScrollAnimations();
     initializeFormValidation();
     initializeSmoothScroll();
 });
 
 // ================================
-// SEÇÃO 2: ANIMAÇÕES DE SCROLL
+// SEÇÃO 2: BARRA DE NAVEGAÇÃO (NAVBAR)
+// Menu hambúrguer minimalista e efeito ghost
+// ================================
+
+function initializeNavbar() {
+    console.log('Inicializando navbar minimalista...');
+    
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    const navbar = document.querySelector('.navbar');
+    
+    // Toggle do menu hambúrguer ao clicar
+    if (hamburger) {
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+    }
+    
+    // Fechar menu ao clicar em um link
+    const navLinks = document.querySelectorAll('.nav-menu a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        });
+    });
+    
+    // Efeito Ghost navbar - muda de transparente para branco ao rolar
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+}
+
+// ================================
+// SEÇÃO 3: ANIMAÇÕES DE SCROLL
 // Detecta quando elementos entram na viewport
 // ================================
 
@@ -45,7 +85,7 @@ function initializeScrollAnimations() {
 }
 
 // ================================
-// SEÇÃO 3: VALIDAÇÃO DE FORMULÁRIO
+// SEÇÃO 4: VALIDAÇÃO DE FORMULÁRIO
 // Valida dados antes do envio
 // ================================
 
@@ -57,7 +97,7 @@ function initializeFormValidation() {
 }
 
 // ================================
-// SEÇÃO 4: SCROLL SUAVE (SMOOTH SCROLL)
+// SEÇÃO 5: SCROLL SUAVE (SMOOTH SCROLL)
 // Navegação suave entre seções
 // ================================
 
